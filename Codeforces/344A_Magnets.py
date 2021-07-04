@@ -1,9 +1,9 @@
 rot = int(input())
-prev_inp = input()
-count = 1
-for i in range(rot-1):
-    new_inp = input()
-    if new_inp != prev_inp:
-        count += 1
-        prev_inp = new_inp
-print(count)
+group = 1
+prevElem = int(input())
+for i in range(1,rot):
+    newElem = int(input())
+    if newElem != prevElem:
+        prevElem = newElem
+        group +=1
+print(group)
