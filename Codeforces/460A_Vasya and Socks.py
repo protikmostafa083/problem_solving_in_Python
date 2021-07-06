@@ -1,7 +1,8 @@
-n, m = map(int, input().split())
-days = n
-days = days + int(days//m)
-if (days%m==0):
-    print(days+1)
-else:
-    print(days)
+shocksStock, dayInterval = map(int, input().split())
+day = 0
+while shocksStock > 0:
+    day += 1
+    shocksStock -= 1
+    if day % dayInterval == 0:
+        shocksStock += 1
+print(day)
